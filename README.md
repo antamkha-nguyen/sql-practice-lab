@@ -36,9 +36,9 @@ The database consists of **8 relational tables**.
 - Each sales transaction is associated with a customer and store.
 - `soldvia` connects products with sales transactions and records the quantity purchased.
 
-** ER Diagram **
+**ER Diagram**
 
-<img width="600" height="700" alt="ZAGI_erd" src="https://github.com/user-attachments/assets/24b4dfd3-4249-4e56-9b95-33ad8b2d9201" />
+<img width="600" height="670" alt="ZAGI_erd" src="https://github.com/user-attachments/assets/24b4dfd3-4249-4e56-9b95-33ad8b2d9201" />
 
 ---
 
@@ -75,9 +75,9 @@ The database consists of **9 relational tables**.
 - Inspectors are associated with buildings through inspection records.
 - Cleaning assignments associate staff members with apartments.
 
-** ER Diagram **
+**ER Diagram**
 
-<img width="600" height="700" alt="HAFH_erd" src="https://github.com/user-attachments/assets/28825531-d3ac-4e43-9a82-7193319fe06b" />
+<img width="600" height="670" alt="HAFH_erd" src="https://github.com/user-attachments/assets/28825531-d3ac-4e43-9a82-7193319fe06b" />
 
 ---
 
