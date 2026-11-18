@@ -2,10 +2,7 @@
 
 A collection of SQL exercises using **PostgreSQL**, focused on relational database concepts, SQL querying and data retrieval through business scenarios.
 
-## Tech Stack
-
-- **Database:** PostgreSQL
-- **Core Concepts:** Joins, Aggregations, Subqueries and Data Filtering
+**Core Concepts:** Joins, Aggregations, Subqueries, Data Filtering and more.
 
 ## 1. ZAGI Retail: Sales Database
 
@@ -97,5 +94,3 @@ sql-practice-lab/
 ## Notes
 
 These databases are educational case studies used for SQL practice. The repository contains database schema definitions and query exercises rather than production systems. The SQL schema files define the table structures but do not contain sample data. Query execution requires the corresponding database records.
-
-
