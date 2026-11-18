@@ -78,7 +78,7 @@ The database consists of **9 relational tables**.
 
 ---
 
-## Repository Structure
+## Repo Structure
 
 ```text
 sql-practice-lab/
@@ -93,4 +93,4 @@ sql-practice-lab/
 
 ## Notes
 
-These databases are educational case studies used for SQL practice. The repository contains database schema definitions and query exercises rather than production systems. The SQL schema files define the table structures but do not contain sample data. Query execution requires the corresponding database records.
+These databases are educational samples used for SQL practice. The repository contains database schema definitions and query exercises with table structures but do not contain sample data.
