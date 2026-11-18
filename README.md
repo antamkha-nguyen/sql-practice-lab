@@ -36,6 +36,10 @@ The database consists of **8 relational tables**.
 - Each sales transaction is associated with a customer and store.
 - `soldvia` connects products with sales transactions and records the quantity purchased.
 
+** ER Diagram **
+
+<img width="823" height="840" alt="ZAGI_erd" src="https://github.com/user-attachments/assets/24b4dfd3-4249-4e56-9b95-33ad8b2d9201" />
+
 ---
 
 ## 2. HAFH Realty: Property Management Database
@@ -70,6 +74,10 @@ The database consists of **9 relational tables**.
 - Corporate clients may lease apartments and refer other corporate clients.
 - Inspectors are associated with buildings through inspection records.
 - Cleaning assignments associate staff members with apartments.
+
+** ER Diagram **
+
+<img width="731" height="798" alt="HAFH_erd" src="https://github.com/user-attachments/assets/28825531-d3ac-4e43-9a82-7193319fe06b" />
 
 ---
 
