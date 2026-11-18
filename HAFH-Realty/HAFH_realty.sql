@@ -1,18 +1,11 @@
 --- HAFH Realty Company
---- Display the SMemberID and SMemberName, for all staff members
 
-SELECT * FROM hafh.staffmember ;
-
---- Display the CCID, CCName, for CCIndustry, for all corporate clients
-
-SELECT CCID, CCName, CCIndustry
-FROM hafh.corpclient
-ORDER BY CCIndustry;
 --- Display the BuildingID, BNoOfFloors, and the manager’s MFName and MLName, for all buildings
 SELECT b.BuildingID, b.BNoOfFloors, m.MFName, m.MLName
 FROM hafh.building b 
 JOIN hafh.manager m 
 ON b.BManagerID = m.ManagerID;
+
 --- Display the MFName, MLName, MSalary, MBdate, and the number of buildings that the manager manages, for all managers with a salary less than $60,000
 
 SELECT m.MFName, m.MLName, m.MSalary, m.MBdate, COUNT (*) AS num_of_buildings_managed
@@ -38,8 +31,9 @@ JOIN hafh.inspecting t
 ON i.InsID = t.InsID
 WHERE t.DateNext > '2014-01-01' ;
 
---- Display the SMemberID and SMemberName of staff members cleaning apartments rented by corporate clients whose corporate location is ‘Chicago’.
---- Do not display the same information more than once.
+--- Display the SMemberID and SMemberName of staff members cleaning apartments rented by corporate clients whose corporate location is ‘Chicago’
+--- Do not display the same information more than once
+
 SELECT DISTINCT s.SMemberID, s.SMemberName
 FROM hafh.staffmember s
 JOIN hafh.cleaning cl
@@ -51,16 +45,15 @@ JOIN hafh.corpclient c
 ON a.CCID = c.CCID
 WHERE c.CCLocation = 'Chicago';
 
---- Display the CCName of the client and the CCName of the client who referred it, for every client referred by a client in the music industry.
+--- Display the CCName of the client and the CCName of the client who referred it, for every client referred by a client in the music industry
 SELECT c.CCName AS clientname, r.CCName AS referredby
 FROM hafh.corpclient c
 JOIN hafh.corpclient r
 ON c.CCIDReferredBy = r.CCID
 WHERE r.CCIndustry = 'Music' ;
 
---- Display the BuildingID, AptNo, and ANoOfBedrooms for all apartments that are not leased.
+--- Display the BuildingID, AptNo, and ANoOfBedrooms for all apartments that are not leased
 SELECT BuildingID, AptNo, ANoOfBedrooms
 FROM hafh.apartment
 WHERE CCID IS NULL;
---- Display all information of the managers.
-SELECT * FROM hafh.manager;
+
