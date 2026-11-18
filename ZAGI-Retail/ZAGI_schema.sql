@@ -1,5 +1,8 @@
 -- ZAGI Retail Company Sales Department Database
 
+CREATE SCHEMA IF NOT EXISTS zagi;
+SET search_path TO zagi, public;
+
 CREATE TABLE vendor (
     vendorid CHAR(2) NOT NULL,
     vendorname VARCHAR(25) NOT NULL,
