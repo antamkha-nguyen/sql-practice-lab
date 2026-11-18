@@ -1,13 +1,5 @@
 --- ZAGI Retail Company Sales Department Database
 
---- Display the VendorID, VendorName for all vendors
-SELECT VendorID, VendorName
-FROM zagi.vendor;
-
---- Display the CustomerName, CustomerZip for all customers
-SELECT CustomerName, CustomerZip
-FROM zagi.customer;
-
 --- Display the ProductID, ProductName, ProductPrice for all products with a price of $100 or higher
 SELECT ProductID, ProductName, ProductPrice
 FROM zagi.product
@@ -73,6 +65,7 @@ FROM zagi.category c
 LEFT JOIN zagi.product p
 ON c.CategoryID = p.CategoryID
 GROUP BY c.CategoryID, c.CategoryName;
+
 --- Display the CategoryID and the total number of items purchased in each product category
 --- Include all product categories
 SELECT c.CategoryID, SUM(i.Quantity) AS total_items_purchased
@@ -82,9 +75,6 @@ ON c.CategoryID = p.CategoryID
 LEFT JOIN zagi.includes i
 ON p.ProductID = i.ProductID
 GROUP BY c.CategoryID;
-
-
-
 
 
 
