@@ -1,5 +1,8 @@
 -- HAFH Realty Company Property Management Database
 
+CREATE SCHEMA IF NOT EXISTS hafh;
+SET search_path TO hafh, public;
+
 CREATE TABLE manager (
     managerid CHAR(4) NOT NULL,
     mfname VARCHAR(15) NOT NULL,
